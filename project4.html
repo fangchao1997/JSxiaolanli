@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    #out div{
+        width: 100px;
+        height: 100px;
+        background: #000;
+        float: left;
+        margin-left: 10px; 
+    }
+</style>
+<body>
+   <button id="btn">点击变色</button>
+   <div id="out">
+        <div></div>
+        <div></div> 
+        <div></div>
+   </div>
+   
+</body>
+<script>
+   var btn=document.getElementById("btn")
+   var ddv=document.getElementById("out").getElementsByTagName("div")
+  
+    btn.onclick=function(){
+        for(var i=0;i<ddv.length;i++){
+            ddv[i].style.background="red"
+        }
+    }
+   
+</script>
+</html>

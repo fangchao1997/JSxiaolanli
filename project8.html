@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        position: relative;
+        
+        
+    }
+    #box{
+        width: 100px;
+        height: 50px;
+        border: 1px solid #666;
+        display: none;
+        position: absolute;
+        left: 50%;
+    }
+</style>
+<body>
+    <div id="box"><span id="bb">×</span></div>
+    <button id="btn">点击</button>
+</body>
+<script>
+   var box = document.getElementById("box")
+   var bb = document.getElementById("bb")
+   var btn = document.getElementById("btn")
+   btn.onclick=function(){
+       box.style.display="block"
+       
+   }
+   bb.onclick=function(){
+       box.style.display="none"
+       
+   }
+</script>
+</html>
